@@ -1,0 +1,494 @@
+#root .cover {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  /* background-color: #ff00001a; */
+  display: none;
+}
+
+#root .continer-match {
+  max-width: 598px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* nav data  */
+#root .scoreboard {
+  width: 90vw;
+  height: auto;
+  position: fixed;
+  top: 30px;
+  max-width: 600px;
+  left: 50%;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+  border-bottom: 3px solid #b7aeae;
+  border-left: 3px solid #b7aeae;
+  border-right: 3px solid #b7aeae;
+  margin: 0 auto;
+  z-index: 9990;
+  transform: translate(-50%, 0);
+  background-color: #cccccc;
+  background-image: linear-gradient(#80b5c5, #254976, #80b5c5);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: space-around;
+  align-items: center;
+  pointer-events: none;
+  flex-direction: row-reverse;
+}
+#root .scoreboard::after {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: -3px;
+  background-color: #b7aeae;
+  width: 3px;
+  pointer-events: none;
+  height: 30px;
+}
+#root .scoreboard::before {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  top: -30px;
+  right: -3px;
+  background-color: #b7aeae;
+  width: 3px;
+  height: 30px;
+}
+#root .scoreboard .scoreboardItem {
+  /* background-color: #315778; */
+  padding: 3px 7px;
+  pointer-events: auto;
+  color: #eee;
+  box-shadow: inset -1px 1px 2px black, inset 1px -1px 2px #eee;
+  margin: 5px auto;
+  font-size: 0.8em;
+  border-radius: 7px;
+  padding-left: 10px;
+  text-align: end;
+  position: relative;
+  min-width: 40px;
+  text-align: center;
+}
+#root .scoreboard .scoreboardItem select {
+  background: none;
+  color: #eee;
+  font-size: 0.8em;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+#root .scoreboard .scoreboardItem select option {
+  color: black;
+}
+#root .scoreboard .clock::after {
+  background-image: url("../../assets/images/timer.png");
+  content: "";
+  position: absolute;
+  left: -16px;
+  top: 0px;
+  background-size: cover;
+  /* background-color: red; */
+  padding: 12px;
+}
+#root .scoreboard .cardds::after {
+  background-image: url("../../assets/images/match-card.png");
+  content: "";
+  position: absolute;
+  left: -12px;
+  top: 0px;
+  background-size: cover;
+  /* background-color: red; */
+  padding: 11px;
+}
+#root .scoreboard .championship::after {
+  background-image: url("../../assets/images/championship.png");
+  content: "";
+  position: absolute;
+  left: -14px;
+  top: 0px;
+  background-size: cover;
+  /* background-color: red; */
+  padding: 11px;
+}
+#root .scoreboard .moves::after {
+  background-image: url("../../assets/images/moves.png");
+  content: "";
+  position: absolute;
+  left: -16px;
+  top: 0px;
+  background-size: cover;
+  /* background-color: red; */
+  padding: 12px;
+}
+#root .scoreboard .speed::after {
+  background-image: url("../../assets/images/speed.png");
+  content: "";
+  position: absolute;
+  left: -11px;
+  top: 0px;
+  background-size: cover;
+  transform: rotateY(180deg);
+  /* background-color: red; */
+  padding: 12px;
+}
+/* nav data  */
+
+#root .disBlock {
+  display: block;
+}
+#root .playground {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  perspective: 1000px;
+  margin-bottom: -15px;
+}
+.Match-body #root {
+  margin-top: 70px;
+}
+#root .playground .card {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: 15px;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+
+  width: 23.5%;
+  max-width: 150px;
+  height: 26vw;
+  max-height: 150px;
+}
+
+.w3 {
+  width: 45% !important;
+  height: 45vw !important;
+  line-height: 45vw !important;
+  max-height: 150px !important;
+  max-width: 150px !important;
+}
+
+.w4 {
+  width: 24% !important;
+  max-width: 176px !important;
+  height: 20vw !important;
+  line-height: 20vw !important;
+  max-height: 150px !important;
+}
+
+.w6 {
+  width: 24% !important;
+  max-width: 178px !important;
+  height: 20vw !important;
+  line-height: 20vw !important;
+  max-height: 150px !important;
+}
+
+.w8 {
+  width: 24% !important;
+  max-width: 186px !important;
+  height: 20vw !important;
+  line-height: 20vw !important;
+  max-height: 150px !important;
+}
+
+.w10 {
+  width: 19% !important;
+  max-width: 150px !important;
+  height: 20vw !important;
+  line-height: 20vw !important;
+  max-height: 150px !important;
+}
+
+.w12 {
+  width: 15% !important;
+  max-width: 140px !important;
+  height: 20vw !important;
+  line-height: 20vw !important;
+  max-height: 140px !important;
+}
+
+.w14 {
+  width: 13% !important;
+  max-width: 130px !important;
+  height: 20vw !important;
+  line-height: 20vw !important;
+  max-height: 130px !important;
+}
+
+.w16 {
+  width: 12% !important;
+  height: 20vw !important;
+  line-height: 20vw !important;
+  max-height: 130px !important;
+}
+.w18 {
+  width: 12% !important;
+  height: 20vw !important;
+  line-height: 20vw !important;
+  max-height: 130px !important;
+}
+
+.w20 {
+  width: 12% !important;
+  height: 20vw !important;
+  line-height: 20vw !important;
+  max-height: 130px !important;
+}
+
+.w21 {
+  width: 13% !important;
+  height: 8vw !important;
+  line-height: 20vw !important;
+  max-height: 130px !important;
+}
+
+/* .card .name-card{
+    line-height: 16vh;
+  } */
+
+#root .playground .card div {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transition: 0.6s;
+  background: #fff;
+}
+#root .playground .card .front {
+  font-size: 50px;
+  line-height: 120px;
+  cursor: pointer;
+  color: #b9bfcc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../assets/images/card.jpg");
+  background-size: 100% 100%;
+  background-origin: border-box;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  border: 3px solid blue;
+  /* filter: brightness(0.7); */
+  box-sizing: border-box;
+}
+.background-fireMan #root .playground .card .front {
+  background-image: url("../../assets/images/cardSam.jpg") !important;
+}
+#root .playground .card .back {
+  transform: rotateY(180deg);
+  line-height: 110px;
+  display: grid;
+  place-items: center;
+}
+#root .playground .card .back img {
+  vertical-align: middle;
+  width: 70%;
+}
+#root .playground .card.opened {
+  transform: rotateY(180deg);
+}
+#root .playground .card.matched {
+  transform: rotateY(180deg);
+}
+#root .playground .card.matched .back {
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.05) inset;
+  -webkit-animation: selected 0.8s 0s ease 1;
+  animation: selected 0.8s 0s ease 1;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  opacity: 0.4;
+}
+
+@-webkit-keyframes selected {
+  0% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  70% {
+    opacity: 0.2;
+  }
+  100% {
+    display: none !important;
+  }
+}
+
+@keyframes selected {
+  0% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  70% {
+    opacity: 0.2;
+  }
+  100% {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .skew-menu {
+    text-align: center;
+  }
+  .skew-menu ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transform: skew(0deg);
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+  }
+  .skew-menu ul li {
+    background: #fff;
+    float: left;
+    border-right: 1px solid #eee;
+    box-shadow: 0px 0px 13px 0px rgb(67 61 61 / 99%);
+    text-transform: uppercase;
+    color: #555;
+    font-weight: bolder;
+    transition: all 0.3s linear;
+  }
+  .skew-menu ul li:first-child {
+    border-radius: 7px 7px 0 0;
+  }
+  .skew-menu ul li:last-child {
+    border-right: none;
+    border-radius: 0px 0 0px 0;
+  }
+  .skew-menu ul li:hover {
+    background: #eee;
+    color: tomato;
+  }
+  .skew-menu ul li a {
+    display: block;
+    padding: 1em 2em;
+    color: inherit;
+    text-decoration: none;
+    transform: skew(-7deg);
+  }
+  .skew-menu .images-grid {
+    grid-template-columns: 29.9vw 29.9vw 29.9vw;
+    grid-template-rows: repeat(5, 29.9vw);
+    /* overflow: auto; */
+
+    /* max-height: calc(100vh - 33px); */
+  }
+  .skew-menu .images-grid a {
+    /* padding: 1px; */
+  }
+
+  /* *********  /   Nav  /  ********** */
+
+  .background-fireMan:before {
+    background-image: url("../../assets/images/backgraund-phine.jpg") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 90%;
+  }
+  .w3 {
+    width: 49% !important;
+    height: 49vw !important;
+    max-height: 150px !important;
+    max-width: 150px !important;
+  }
+
+  .w4 {
+    width: 49% !important;
+    height: 49vw !important;
+    max-height: 120px !important;
+    max-width: 370px !important;
+  }
+
+  .w6 {
+    width: 29% !important;
+    max-width: 178px !important;
+    height: 29vw !important;
+    max-height: 190px !important;
+  }
+
+  .w8 {
+    width: 22% !important;
+    max-width: 150px !important;
+    height: 22vw !important;
+    max-height: 150px !important;
+  }
+
+  .w10 {
+    width: 24% !important;
+    max-width: 150px !important;
+    height: 26vw !important;
+    max-height: 150px !important;
+  }
+
+  .w12 {
+    width: 24% !important;
+    max-width: 140px !important;
+    height: 23vw !important;
+    max-height: 140px !important;
+  }
+
+  .w14 {
+    width: 24% !important;
+    max-width: 130px !important;
+    height: 20vw !important;
+    max-height: 130px !important;
+  }
+
+  .w16 {
+    width: 24% !important;
+    height: 17vw !important;
+    max-height: 130px !important;
+  }
+  .w18 {
+    width: 16% !important;
+    height: 16vw !important;
+    max-height: 130px !important;
+  }
+
+  .w20 {
+    width: 24% !important;
+    height: 17vw !important;
+    max-height: 130px !important;
+  }
+
+  .w22 {
+    width: 15% !important;
+    height: 15vw !important;
+    max-height: 130px !important;
+  }
+
+  #root .playground .card .back img {
+    vertical-align: middle;
+    width: 70%;
+    max-width: 112px;
+  }
+}

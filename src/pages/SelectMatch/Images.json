@@ -1,0 +1,76 @@
+{
+    "full-letters": {
+        "sound_unique": false,
+        "sound_for_img": true,
+        "sound_for_text": false,
+        "images_text": true,
+        "images": [
+            "ארנבת",
+            "דולפין",
+            "חד-קרן",
+            "חתול",
+            "ילקוט",
+            "כלב",
+            "לבבות",
+            "סוס",
+            "קסדה",
+            "קשת-בענן"
+        ]
+    },
+    "first-letters": {
+        "sound_unique": false,
+        "sound_for_img": true,
+        "sound_for_text": true,
+        "images_text": true,
+        "images": [
+            "א",
+            "ב",
+            "ג",
+            "ד",
+            "ה",
+            "ו",
+            "ז",
+            "ח",
+            "ט",
+            "י",
+            "כ",
+            "ל",
+            "מ",
+            "נ",
+            "ס",
+            "ע",
+            "פ",
+            "צ",
+            "ק",
+            "ר",
+            "ש",
+            "ת"
+        ]
+    },
+    "fireman": {
+        "sound_unique": true,
+        "sound_for_text": false,
+        "sound_for_img": true,
+        "images_text": false,
+        "images": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18"
+        ]
+    }
+}
