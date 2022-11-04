@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/games-development/static/css/main.69b1e378.css",
-    "main.js": "/games-development/static/js/main.6515852a.js",
+    "main.js": "/games-development/static/js/main.df8fa466.js",
     "static/media/unicorn4.png": "/games-development/static/media/unicorn4.c157c7c075e382682d30.png",
     "static/media/unicorn3.png": "/games-development/static/media/unicorn3.de77a45fc1b318b32674.png",
     "static/media/unicorn.png": "/games-development/static/media/unicorn.d3d018a78ae1f2d71498.png",
@@ -87,10 +87,10 @@
     "static/media/ארנבת.png": "/games-development/static/media/ארנבת.3621d6c705fdc103e2f3.png",
     "index.html": "/games-development/index.html",
     "main.69b1e378.css.map": "/games-development/static/css/main.69b1e378.css.map",
-    "main.6515852a.js.map": "/games-development/static/js/main.6515852a.js.map"
+    "main.df8fa466.js.map": "/games-development/static/js/main.df8fa466.js.map"
   },
   "entrypoints": [
     "static/css/main.69b1e378.css",
-    "static/js/main.6515852a.js"
+    "static/js/main.df8fa466.js"
   ]
 }
