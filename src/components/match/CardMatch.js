@@ -3,7 +3,7 @@ import styles from "./cardMatch.module.css";
 
 function CardMatch({ src, path, title, descr }) {
   return (
-    <Link className={styles.card} to={`games-development/${path}`}>
+    <Link className={styles.card} to={`games-development${path}`}>
       <div className={styles.card__cont}>
         <img className={styles.card__image} src={src} alt="fireman" />
         <div className={styles.card__context}>

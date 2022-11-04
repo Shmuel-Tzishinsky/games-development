@@ -141,7 +141,7 @@ function NavPuzzle(props) {
           <div className="menuButton">
             {winn && levelNext ? (
               <button onClick={() => setLevel(levelNext.split("-"))}>
-                <Link to={`/puzzle/${levelProps[1]}/${levelNext}/nextLevel`}>
+                <Link to={`/games-development/puzzle/${levelProps[1]}/${levelNext}/nextLevel`}>
                   <img src={next_level_gif} alt="" />
                 </Link>
               </button>
