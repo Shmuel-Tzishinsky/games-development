@@ -35,8 +35,8 @@ export default function Match() {
       setWin(true);
       setTimeout(() => setMatches(0), 2000);
       if (select === "fireman") {
-        UseAudio("/" + select + "/saund/level_completed.mp3");
-      } else UseAudio(`/saund/level_completed.ogg`);
+        UseAudio("/games-development/" + select + "/saund/level_completed.mp3");
+      } else UseAudio(`/games-development/saund/level_completed.ogg`);
       addCard(2000);
     }
   }
@@ -56,13 +56,13 @@ export default function Match() {
       setMatches((matches) => matches + 1);
 
       if (select === "fireman") {
-        UseAudio("/" + select + "/saund/match.mp3");
-      } else UseAudio(`/saund/match.ogg`);
+        UseAudio("/games-development/" + select + "/saund/match.mp3");
+      } else UseAudio(`/games-development/saund/match.ogg`);
       checkWin();
     } else {
       if (select === "fireman") {
-        UseAudio("/" + select + "/saund/turn.mp3");
-      } else UseAudio(`/saund/turn.ogg`);
+        UseAudio("/games-development/" + select + "/saund/turn.mp3");
+      } else UseAudio(`/games-development/saund/turn.ogg`);
       event_finalizedFrameworks[openedFrameworks[0].index].close = true;
       event_finalizedFrameworks[openedFrameworks[1].index].close = true;
     }
@@ -78,11 +78,11 @@ export default function Match() {
   function handleClick(name, index, saundIMG, saundTEXT) {
     let saundURL;
     if (saundTEXT && select === "first-lettres") {
-      saundURL = "/" + select + "/saundTEXT/" + name.replace("png", "ogg");
+      saundURL = "/games-development/" + select + "/saundTEXT/" + name.replace("png", "ogg");
     } else if (saundIMG && select === "first-lettres") {
-      saundURL = "/" + select + "/saundIMG/" + name.replace("png", "ogg");
+      saundURL = "/games-development/" + select + "/saundIMG/" + name.replace("png", "ogg");
     } else {
-      saundURL = `/saund/card.ogg`;
+      saundURL = `/games-development/saund/card.ogg`;
     }
     UseAudio(saundURL);
 

@@ -6,9 +6,9 @@ import quizBg from "../../assets/images/img_nav/quiz.png";
 
 function Home() {
   const cards = [
-    { path: "/menuMatch", src: firemanBg, title: "משחק זכרון", descr: "משחק חשיבה מהנה שמקנה לילד יכולת כתיבה ללא שגיאות כתיב" },
-    { path: "/puzzle", src: puzzleBg, title: "משחק פאזל", descr: "משחק חשיבה מהנה שמקנה לילד יכולת כתיבה ללא שגיאות כתיב" },
-    { path: "/quiz", src: quizBg, title: "משחק טריוויה", descr: "משחק חשיבה מהנה שמקנה לילד יכולת כתיבה ללא שגיאות כתיב" },
+    { path: "/games-development/menuMatch", src: firemanBg, title: "משחק זכרון", descr: "משחק חשיבה מהנה שמקנה לילד יכולת כתיבה ללא שגיאות כתיב" },
+    { path: "/games-development/puzzle", src: puzzleBg, title: "משחק פאזל", descr: "משחק חשיבה מהנה שמקנה לילד יכולת כתיבה ללא שגיאות כתיב" },
+    { path: "/games-development/quiz", src: quizBg, title: "משחק טריוויה", descr: "משחק חשיבה מהנה שמקנה לילד יכולת כתיבה ללא שגיאות כתיב" },
   ];
 
   return <UlMatch cards={cards} />;

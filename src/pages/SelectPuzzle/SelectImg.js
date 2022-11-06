@@ -36,7 +36,7 @@ function SelectImg() {
       <h1 className={styles.h1}>אנא בחר רקע</h1>
       <div className={styles.cards}>
         {imgsLoaded.map((image, key) => (
-          <a className={styles.card} key={key} href={`/puzzle/${IMAGES_ARRAY[key].name}/4-2-50`}>
+          <a className={styles.card} key={key} href={`/games-development/puzzle/${IMAGES_ARRAY[key].name}/4-2-50`}>
             {console.log(image)}
             <img className={styles.card__img} src={image.path[0].src} alt={IMAGES_ARRAY[key].name} />
           </a>
