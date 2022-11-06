@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/games-development/static/css/main.69b1e378.css",
-    "main.js": "/games-development/static/js/main.65f9d787.js",
+    "main.css": "/games-development/static/css/main.db8bc22d.css",
+    "main.js": "/games-development/static/js/main.361a05f8.js",
+    "static/js/845.cca785c1.chunk.js": "/games-development/static/js/845.cca785c1.chunk.js",
     "static/media/unicorn4.png": "/games-development/static/media/unicorn4.c157c7c075e382682d30.png",
     "static/media/unicorn3.png": "/games-development/static/media/unicorn3.de77a45fc1b318b32674.png",
     "static/media/unicorn.png": "/games-development/static/media/unicorn.d3d018a78ae1f2d71498.png",
@@ -15,11 +16,14 @@
     "static/media/firemanSam3.png": "/games-development/static/media/firemanSam3.0bbfa59200464efb8a99.png",
     "static/media/firemanSam2.png": "/games-development/static/media/firemanSam2.abb1f6eb514c3747e259.png",
     "static/media/firemanSam4.png": "/games-development/static/media/firemanSam4.474adda9347f82cf186c.png",
+    "static/media/sad-face-emoji.gif": "/games-development/static/media/sad-face-emoji.4dceb540d78f7b4e8c17.gif",
     "static/media/backgraund-phine.jpg": "/games-development/static/media/backgraund-phine.a6f80ce8c52934173094.jpg",
     "static/media/helloKiti2.png": "/games-development/static/media/helloKiti2.4d54b9f1f3c5c3d55129.png",
+    "static/media/trophy.gif": "/games-development/static/media/trophy.2bc7bfa73a40ebe38d8e.gif",
     "static/media/helloKiti4.png": "/games-development/static/media/helloKiti4.346db225265f10ea1674.png",
     "static/media/puzzle.png": "/games-development/static/media/puzzle.48afa9f0bcdeaccd4423.png",
     "static/media/background__fireman.png": "/games-development/static/media/background__fireman.770cae967874bf84c9a3.png",
+    "static/media/guess-the-picture.png": "/games-development/static/media/guess-the-picture.ac21d7933ce57e0c29b1.png",
     "static/media/fireman.png": "/games-development/static/media/fireman.0e9e86c6a80aae19fb52.png",
     "static/media/full-letters.png": "/games-development/static/media/full-letters.6fa73a139490dee092c2.png",
     "static/media/first-letters.png": "/games-development/static/media/first-letters.56c3d75a81fffc45acc0.png",
@@ -36,6 +40,7 @@
     "static/media/6.png": "/games-development/static/media/6.09d6422656bab1d89d1c.png",
     "static/media/8.png": "/games-development/static/media/8.9baa7b33377ba235f5a0.png",
     "static/media/ת.png": "/games-development/static/media/ת.f18a241dbe49d31556e6.png",
+    "static/media/crowd_winner.mp3": "/games-development/static/media/crowd_winner.f3848f5d5fa6059367ed.mp3",
     "static/media/10.png": "/games-development/static/media/10.b6bd394f75e0e88de13f.png",
     "static/media/card.jpg": "/games-development/static/media/card.8498c54a148cc8c33f96.jpg",
     "static/media/ב.png": "/games-development/static/media/ב.5769695b8a022c733934.png",
@@ -70,8 +75,11 @@
     "static/media/ד.png": "/games-development/static/media/ד.c9c30d33bf2b2f510c71.png",
     "static/media/מ.png": "/games-development/static/media/מ.b69b1166ede33d336fbd.png",
     "static/media/ה.png": "/games-development/static/media/ה.6302a977524ca8f5a246.png",
+    "static/media/correct.mp3": "/games-development/static/media/correct.89f72ff5cab9552368ea.mp3",
     "static/media/ש.png": "/games-development/static/media/ש.9dd1026a9d5a912cc60c.png",
     "static/media/י.png": "/games-development/static/media/י.cbddeb455f9611f8271a.png",
+    "static/media/wrong.mp3": "/games-development/static/media/wrong.6a9b75d01e1dd14e5244.mp3",
+    "static/media/bg-body.png": "/games-development/static/media/bg-body.3f0bdb1656ba0698b17b.png",
     "static/media/חד-קרן.png": "/games-development/static/media/חד-קרן.87624e5cf3876d38b036.png",
     "static/media/championship.png": "/games-development/static/media/championship.5717431610237d5e4c2f.png",
     "static/media/ח.png": "/games-development/static/media/ח.0ce8729506ddd9960a0e.png",
@@ -85,12 +93,14 @@
     "static/media/דולפין.png": "/games-development/static/media/דולפין.1fb1232000c917e77352.png",
     "static/media/קשת-בענן.png": "/games-development/static/media/קשת-בענן.e3745a7a532f067dc477.png",
     "static/media/ארנבת.png": "/games-development/static/media/ארנבת.3621d6c705fdc103e2f3.png",
+    "static/media/timer.mp3": "/games-development/static/media/timer.510db6f6f894100883c0.mp3",
     "index.html": "/games-development/index.html",
-    "main.69b1e378.css.map": "/games-development/static/css/main.69b1e378.css.map",
-    "main.65f9d787.js.map": "/games-development/static/js/main.65f9d787.js.map"
+    "main.db8bc22d.css.map": "/games-development/static/css/main.db8bc22d.css.map",
+    "main.361a05f8.js.map": "/games-development/static/js/main.361a05f8.js.map",
+    "845.cca785c1.chunk.js.map": "/games-development/static/js/845.cca785c1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.69b1e378.css",
-    "static/js/main.65f9d787.js"
+    "static/css/main.db8bc22d.css",
+    "static/js/main.361a05f8.js"
   ]
 }
