@@ -5,13 +5,13 @@ import { FullScreen } from "../../components/FullScreen";
 import NavPuzzle from "./Nav";
 import Confetti from "../../components/Confetti";
 import spinner from "../../assets/images/spinner.gif";
-import Navbar from "../../components/Navbar";
+// import Navbar from "../../components/Navbar";
 import "./Puzzle.css";
 
 function Puzzle(props) {
   // const img = img;
   const { imgName, level, nextLevel } = useParams();
-  console.log("🚀 ~ file: Puzzle.js ~ line 14 ~ Puzzle ~ imgName, level, nextLevel", imgName, level, nextLevel);
+  // console.log("🚀 ~ file: Puzzle.js ~ line 14 ~ Puzzle ~ imgName, level, nextLevel", imgName, level, nextLevel);
 
   const [theLevel, setLevel] = useState(level.split("-"));
   const [tilesArray, setTilesArray] = useState([]);
@@ -122,7 +122,8 @@ function Puzzle(props) {
         let newTile = {
           id: i,
           top: -Math.floor(i / theLevel[1]) * (widthEle / theLevel[1]),
-          left: i < theLevel[1] ? -i * (widthEle / theLevel[1]) : -(i % theLevel[1]) * (widthEle / theLevel[1]),
+          left:
+            i < theLevel[1] ? -i * (widthEle / theLevel[1]) : -(i % theLevel[1]) * (widthEle / theLevel[1]),
         };
         newTilesArray.push(newTile);
       }
@@ -177,6 +178,8 @@ function Puzzle(props) {
       clearInterval(intrevalTimer);
       window.removeEventListener("resize", handleResize);
     };
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [theLevel]);
 
   return (
@@ -257,8 +260,10 @@ function Puzzle(props) {
               // className={selectedTileId === tile.id ? "tilewrap selected" : "tilewrap"}
               onClick={() => (!pause ? tile.id !== id && hendLeSwap(tile.id) : alertMassage())}
               style={{
-                width: (moves === 0 && !intrevalTimer) || winn ? `${theLevel[2]}%` : `calc(${theLevel[2]}% - 4px)`,
-                paddingBottom: (moves === 0 && !intrevalTimer) || winn ? `${theLevel[2]}%` : `calc(${theLevel[2]}% - 4px)`,
+                width:
+                  (moves === 0 && !intrevalTimer) || winn ? `${theLevel[2]}%` : `calc(${theLevel[2]}% - 4px)`,
+                paddingBottom:
+                  (moves === 0 && !intrevalTimer) || winn ? `${theLevel[2]}%` : `calc(${theLevel[2]}% - 4px)`,
               }}
             >
               {imgLoaded ? (

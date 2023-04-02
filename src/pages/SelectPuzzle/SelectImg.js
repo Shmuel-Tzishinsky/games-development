@@ -13,8 +13,7 @@ function SelectImg() {
       return new Promise((resolve, reject) => {
         const loadImg = new Image();
         loadImg.src = require(`../../assets/images/puzzle/small/${image.url}`);
-        // wait 2 seconds to simulate loading time
-        loadImg.onload = (src) => resolve(src);
+        loadImg.onload = (src) => resolve(loadImg);
         loadImg.onerror = (err) => reject(err);
       });
     };
@@ -25,7 +24,6 @@ function SelectImg() {
       for (let i = 0; i < IMAGES_ARRAY.length; i++) {
         img.push(await loadImage(IMAGES_ARRAY[i]));
       }
-
       setImgsLoaded(img);
     };
     loadAllImages();
@@ -36,9 +34,12 @@ function SelectImg() {
       <h1 className={styles.h1}>אנא בחר רקע</h1>
       <div className={styles.cards}>
         {imgsLoaded.map((image, key) => (
-          <a className={styles.card} key={key} href={`/games-development/puzzle/${IMAGES_ARRAY[key].name}/4-2-50`}>
-            {console.log(image)}
-            <img className={styles.card__img} src={image.path[0].src} alt={IMAGES_ARRAY[key].name} />
+          <a
+            className={styles?.card}
+            key={key}
+            href={`/games-development/puzzle/${IMAGES_ARRAY[key]?.name}/4-2-50`}
+          >
+            <img className={styles?.card__img} src={image?.src} alt={IMAGES_ARRAY[key]?.name} />
           </a>
         ))}
       </div>
