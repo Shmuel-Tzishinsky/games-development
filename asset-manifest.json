@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/games-development/static/css/main.a07f1cb0.css",
-    "main.js": "/games-development/static/js/main.e6aa5558.js",
+    "main.js": "/games-development/static/js/main.1a2faa23.js",
     "static/js/845.cca785c1.chunk.js": "/games-development/static/js/845.cca785c1.chunk.js",
     "static/media/unicorn4.png": "/games-development/static/media/unicorn4.c157c7c075e382682d30.png",
     "static/media/unicorn3.png": "/games-development/static/media/unicorn3.de77a45fc1b318b32674.png",
@@ -96,11 +96,11 @@
     "static/media/timer.mp3": "/games-development/static/media/timer.510db6f6f894100883c0.mp3",
     "index.html": "/games-development/index.html",
     "main.a07f1cb0.css.map": "/games-development/static/css/main.a07f1cb0.css.map",
-    "main.e6aa5558.js.map": "/games-development/static/js/main.e6aa5558.js.map",
+    "main.1a2faa23.js.map": "/games-development/static/js/main.1a2faa23.js.map",
     "845.cca785c1.chunk.js.map": "/games-development/static/js/845.cca785c1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a07f1cb0.css",
-    "static/js/main.e6aa5558.js"
+    "static/js/main.1a2faa23.js"
   ]
 }
